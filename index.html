@@ -62,6 +62,8 @@
 					<div class="inner">
 						<!-- Experience Section -->
 						<h2>Experience</h2>
+						<hr>
+
 						<!-- Freelance work -->
 						<h3 style="display: inline;">Data Scientist/Statistician</h3>&nbsp;&nbsp; Freelance, August 2022-present
 						<br>
@@ -77,13 +79,14 @@
 						<h3 style="display: inline;">Data Scientist</h3>&nbsp;&nbsp; Mattress Firm, November 2021-July 2022
 						<br>
 						<ul>
-							<li> Built customer segments in python based on demographic data using unsupervised models 
+							<li> Built customer segments in python based on demographic data using <strong>unsupervised models</strong> 
 								to analyze customer habits and look for marketing opportunities  </li>
 							<li> Examined customer demographic data for a variety of marketing teams, working with 
 								stakeholders to develop a more data-driven strategy  </li>
-							<li> Investigated customer survey data in python with NLP to analyze feedback from various 
+							<li> Investigated customer survey data in python with <strong>NLP</strong> to analyze feedback from various 
 								customer groups and determine opportunities for improvement</li>
 							<li> Analyzed the impact of economic stimulus packages on sales, determining there was an increase </li>
+							<li> Built an XGBoost model to classify customers based on previous transaction habits to aid in customer analysis</li>
 						</ul>
 
 						<!-- NC State Baseball-->
@@ -98,7 +101,9 @@
 						<h3 style="display: inline;"> Data Analyst/BI Analyst</h3>&nbsp;&nbsp; Ashley Furniture, November 2019-November 2021
 						<br>
 						<ul>
-							<li> Optimized the process of diverting shipping containers in <strong>python</strong>, saving 8 hours per  </li>
+							<li> Automated manual processes writing SQL queries, <strong>saving 45 hours per week</strong></li>
+							<li> Optimized the process of diverting shipping containers in <strong>python</strong>, <strong>saving 8 hours per
+								week</strong>  </li>
 							<li> Conducted a statistical analysis in <strong>R </strong> on new product sales and advertisement spending using 
 								a linear regression, determined ad spending had no impact on sales, <strong> saving $300,000 </strong> </li>
 						</ul>
@@ -139,18 +144,24 @@
 -->						
 						<!-- Education Section-->
 						<h2>Education</h2>
+						<hr>
+
+						<!-- NC State -->
 						<h3 style="display: inline;">North Carolina State University</h3>&nbsp;&nbsp; Masters of Science, Statistics May 2022
 						<br>
 						Member of the AI and Sports Analytics Clubs.					
 						<br>
 						<br>
+						<!-- Xavier  -->
 						<h3 style="display: inline;">Xavier University</h3>&nbsp;&nbsp;  Bachelors of Science, Mathematics, concentration in Economics May 2018</h3> 
 						<br>						
 						Member of the Math Club and Economics Association
 						<br>
 						<br>
+
 						<h2>Skills</h2>
-						
+						<hr>
+
 						<!-- Programming -->
 						<h4><i class="fa fa-code" aria-hidden="true"></i>&nbsp;&nbsp;Programming</h4>
 						<div class="row">
@@ -208,9 +219,9 @@
 
 						<!-- Downlaod Resume button-->
 						<ul class="actions">
-							<li><a href="generic.html" class="button">Download Resume</a></li>
+							<li><a href="resume/Xavier_Genelin_Resume.pdf" class="button" 
+								download="Xavier_Genelin_Resume" target="_blank">Download Resume</a></li>
 						</ul>
-
 						
 					</div>
 				</section>
@@ -225,12 +236,15 @@
 									<p>A shiny app that allows a user to explore NFL game data, and create models with selected parameters to
 										predict winners for selected weeks.
 									</p>
-									<ul class="actions">
-										<li><a href="https://github.com/xaviergenelin/NFL-Win-Prediction" class="button" onclick="openWin()">GitHub Repo</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="https://xaviergenelin.shinyapps.io/NFL-Win-Prediction/" class="button" onclick="openWin()">Shiny App</a></li>
-									</ul>
+									<div class="row">
+										<div class="display: inline-block">&bullet; R</div>
+										<div class="display: inline-block">&bullet; R Shiny</div>
+										<div class="display: inline-block">&bullet; Classification</div>
+									</div>
+									<div class="btn-group">
+										<button onclick="window.open('https://github.com/xaviergenelin/NFL-Win-Prediction')">GitHub Repo</button>
+										<button onclick="window.open('https://xaviergenelin.shinyapps.io/NFL-Win-Prediction/')">Shiny App</button>
+									</div>
 								</div>
 							</div>
 						</section>
@@ -242,9 +256,14 @@
 									<p>Explore MRI scan data of demented and non-demented individuals to identify risk factors associated with
 										Alzheimer-onset dementia
 									</p>
-									<ul class="actions">
-										<li><a href="https://github.com/xaviergenelin/Alzheimers-Risk-Factors" class="button">GitHub Repo</a></li>
-									</ul>
+									<div class="row">
+										<div class="display: inline-block">&bullet; PySpark</div>
+										<div class="display: inline-block">&bullet; python</div>
+										<div class="display: inline-block">&bullet; Classification</div>
+									</div>
+									<div>
+										<button onclick="window.open('https://github.com/xaviergenelin/Alzheimers-Risk-Factors')">GitHub Repo</button>
+									</div>
 								</div>
 							</div>
 						</section>
@@ -253,10 +272,71 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Motorcycle Sales</h2>
-									<p></p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">GitHub Repo</a></li>
-									</ul>
+									<p>Explore motorcycle sale data to implement both the Grid Search Method and Gradient Descent Method to
+										predict the selling price with the lowest variance.
+									</p>
+									<div class="row">
+										<div class="display: inline-block">&bullet; Python</div>
+										<div class="display: inline-block">&bullet; pandas</div>
+										<div class="display: inline-block">&bullet; matplotlib</div>
+									</div>
+									<div>
+										<button onclick="window.open('https://github.com/xaviergenelin/Motorcycle-Sale-Analysis')">GitHub Repo</button>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a class="image"><img src="images/data.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Data Channel Prediction</h2>
+									<p> Analyze an online news popularity dataset to provide a report for 6 different data channels and predict
+										the number of shares.
+									</p>
+									<div class="row">
+										<div class="display: inline-block">&bullet; R</div>
+										<div class="display: inline-block">&bullet; Regression</div>
+									</div>
+									<div>
+										<button onclick="window.open('https://github.com/xaviergenelin/Data-Channel-Prediction')">GitHub Repo</button>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a class="image"><img src="images/covid.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Covid API</h2>
+									<p>A vignette that shows how to retrieve data from the Covid API for exploratory analysis.
+									</p>
+									<div class="row">
+										<div class="display: inline-block">&bullet; R</div>
+										<div class="display: inline-block">&bullet; Tidyverse</div>
+										<div class="display: inline-block">&bullet; API</div>
+									</div>
+									<div>
+										<button onclick="window.open('https://github.com/xaviergenelin/Covid-API')">GitHub Repo</button>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a class="image"><img src="images/wine.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Red Wine Quality</h2>
+									<p>Analyze the quality of red wine using various regression and classification models.
+									</p>
+									<div class="row">
+										<div class="display: inline-block">&bullet; R</div>
+										<div class="display: inline-block">&bullet; Classification</div>
+										<div class="display: inline-block">&bullet; Regression</div>
+									</div>
+									<div>
+										<button onclick="window.open('https://github.com/xaviergenelin/Red-Wine-Quality-Analysis')">GitHub Repo</button>
+									</div>
 								</div>
 							</div>
 						</section>
