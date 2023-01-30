@@ -18,12 +18,23 @@
 						<ul>
 							<li><a href="#intro">About Me</a></li>							
 							<li><a href="#edu_exp">Education and Experience</a></li>
-							<li><a href="#projects">Projects</a></li>
+							<li><a href="#projects">Projects</a>
+								<ul>
+									<li><a href="#terrain">Terrain Identification</a></li>
+									<li><a href="#emotion">Emotion Classification</a></li>
+									<li><a href="#alzheimers">Alzheimers Risk Factors</a></li>
+									<li><a href="#motorcycle">Motorcycle Sales</a></li>
+									<li><a href="#covid-api">Covid API</a></li>
+									<li><a href="#red-wine">Red Wine Quality</a></li>
+									<li><a href="#big-data">Big Data Project</a></li>
+								</ul>
+							</li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
 			</section>
+
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -31,7 +42,7 @@
 				<!-- About Me -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<img src="images/me.jpeg">
+							<img src="images/me.png">
 							<h1>Xavier Genelin</h1>
 							<h2>Data Scientist</h2>
 							<p>
@@ -257,8 +268,54 @@
 				</section>
 
 				<!-- Projects -->
+				
 					<section id="projects" class="wrapper style2 spotlights">
-						<section>
+						<h2>Projects</h2>
+						<!-- Possible Filters
+						<div id="myBtnContainer">
+							<button class="btn active" onclick="filterSelection('deep-learning')"> Deep Learning</button>
+							<button class="btn" onclick="filterSelection('classification')"> Classification</button>
+							<button class="btn" onclick="filterSelection('regression')"> Regression</button>
+						</div>
+						-->
+						<br>
+						<section id="terrain">
+							<a class="image"><img src="images/terrain.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Terrain Identification</h2>
+									<p>information
+									</p>
+									<div class="row">
+										<div class="display: inline-block">&bullet; PyTorch</div>
+										<div class="display: inline-block">&bullet; Deep Learning</div>
+										<div class="display: inline-block">&bullet; CNN</div>
+									</div>
+									<div>
+										<button onclick="window.open('https://github.com/xaviergenelin/Terrain-Identification')">GitHub Repo</button>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="emotion">
+							<a class="image"><img src="images/emotions.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Emotion Classification</h2>
+									<p>information
+									</p>
+									<div class="row">
+										<div class="display: inline-block">&bullet; PyTorch</div>
+										<div class="display: inline-block">&bullet; Deep Learning</div>
+										<div class="display: inline-block">&bullet; CNN</div>
+									</div>
+									<div>
+										<button onclick="window.open('https://github.com/xaviergenelin/Emotion-Classification')">GitHub Repo</button>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="NFL-win">
 							<a class="image"><img src="images/nfl-league-logo.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
@@ -278,7 +335,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section id="alzheimers">
 							<a class="image"><img src="images/brain.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
@@ -297,7 +354,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section id="motorcycle">
 							<a class="image"><img src="images/motorcycle.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
@@ -316,7 +373,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section id="data-channel">
 							<a class="image"><img src="images/data.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
@@ -334,7 +391,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section id="covid-api">
 							<a class="image"><img src="images/covid.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
@@ -352,7 +409,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section id="red-wine">
 							<a class="image"><img src="images/wine.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
@@ -370,7 +427,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section id="big-data">
 							<a class="image"><img src="images/big_data.jpeg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
