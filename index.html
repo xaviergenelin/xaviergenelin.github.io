@@ -1,526 +1,969 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<title>Xavier's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Xavier's Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">About Me</a></li>							
-							<li><a href="#edu_exp">Education and Experience</a></li>
-							<li><a href="#projects">Projects</a>
-								<ul>
-									<li><a href="#terrain">Terrain Identification</a></li>
-									<li><a href="#emotion">Emotion Detection</a></li>
-									<li><a href="#NFL-win">NFL Win Prediction</a></li>
-									<li><a href="#alzheimers">Alzheimers Risk Factors</a></li>
-									<li><a href="#motorcycle">Motorcycle Sales</a></li>
-									<li><a href="#covid-api">Covid API</a></li>
-									<li><a href="#red-wine">Red Wine Quality</a></li>
-									<li><a href="#big-data">Big Data Project</a></li>
-								</ul>
-							</li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</nav>
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Font Awesome  -->
+	<script src="https://kit.fontawesome.com/db9636b0fe.js" crossorigin="anonymous"></script>
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/profile-picture.png);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Xavier Genelin</a></h1>
+				<span class="position"><a href="#">Data Scientist</a></span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<!--<li class="active"><a href="#" data-nav-section="home">Home</a></li> -->
+						<li><a href="#" data-nav-section="about">About</a></li>						
+						<!--<li><a href="#" data-nav-section="skills">Skills</a></li> -->
+						<li><a href="#" data-nav-section="experience">Experience</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>	
+						<li><a href="#" data-nav-section="skills">Skills</a></li>					
+						<li><a href="#" data-nav-section="projects">Projects</a></li>
+						<!--<li><a href="#" data-nav-section="blog">Blog</a></li> -->
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+				<ul>
+					<li class="horiz"><a href="https://www.linkedin.com/in/xavier-genelin/"><i class="icon-linkedin2"></i></a></li>
+					<li class="horiz"><a href="https://github.com/xaviergenelin"><i class="fa fa-github"></i></a></li>
+				</ul>
+			</nav>
+			<!--
+			<div class="colorlib-footer">
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+-->
+		</aside>
+
+		<div id="colorlib-main">
+			<!--
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1>Hi! <br>I'm Jackson</h1>
+						   					<h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
+												<p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/img_bg_2.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>I am <br>a Designer</h1>
+												<h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
+												<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
+			-->
+
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About</span>
+										<h2 class="colorlib-heading">Who Am I?</h2>
+										<p><strong>Hi I'm Xavier Genelin</strong>. I'm a data scientist with 3 years experience working with data and 2 of those being in the field 
+											of Data Science and Machine Learning. I have an educational background in mathematics, economics, and statistics. I received my 
+											bachelors in Mathematics from Xavier University in 2018 and my masters in Statistics from North Carolina State University in 2022.</p>
+										
+											<p>I have experience working with python, R, and SQL to solve problems and assist in the decision making process using data. I love the 
+											different problems I can solve and insights I can uncover with various datasets. My employement experiences have led me to work with 
+											data in supply chain, marketing, manufacturing, HR, and other areas of business. I am open to remote Data Scientist and Machine Learning 
+											Engineer positions in a variety of industries.</p>
+
+											<p>Outside of work I am usually busy with sports. I coach high school football in Arcadia, Wisconsin and AAU basketball in the same area. 
+												This last year we had 6 different age groups for both boys and girls that I helped coach. My interests for side projects involve 
+												sports data (football and basketball mostly), music, and video games.
+											</p>
+									</div>
+								</div>
+							</div>
+							<!--
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="icon-bulb"></i></span>
+										<h3>Research</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3>Web Design</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3>Data Science</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-phone3"></i></span>
+										<h3>Application</h3>
+									</div>
+								</div>
+							</div>
+							-->
+							<!--
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
+										<a href="#" class="btn-hire">Hire me</a>
+									</div>
+								</div>
+							</div>
+							-->
+						</div>
+					</div>
 				</div>
 			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- About Me -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<img src="images/me.png">
-							<h1>Xavier Genelin</h1>
-							<h2>Data Scientist</h2>
-							<p>
-							Hi! My name is Xavier Genelin. I'm a data scientist with 3 years experience working with
-							data and 2 of those being in the field of Data Science and Machine Learning. I have an 
-							educational background in mathematics, economics, and statistics. I received my bachelors 
-							in Mathematics from Xavier University in 2018 and  my masters in Statistics from
-							North Carolina State University in 2022.
-							</p>
-
-							<p>
-							I have <a href="#edu_exp">experience</a> working with python, R, and SQL to solve problems and assist in the decision making
-							process using data. I love the different problems I can solve and insights I can uncover with various
-							datasets. My employement experiences have led me to work with data in supply chain, 
-							marketing, manufacturing, HR, and other areas of business. I am open to remote Data Scientist and 
-							Machine Learning Engineer positions in a variety of industries.
-							</p>
-
-							<p>
-								Outside of work I am usually busy with sports. I coach high school football in Arcadia, Wisconsin and 
-								AAU basketball in the same area. This last year we had 6 different age groups for both boys
-								and girls that I helped coach. My interests for side projects involve sports data (football and basketball
-								mostly), music, and video games.
-							</p>
+	
+			<!--
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Cups of coffee</span>
 						</div>
-					</section>
-					
-				<!-- Education and Experience -->
-				<section id="edu_exp" class="wrapper style2-alt fade-up">
-					<div class="inner">
-						<!-- Experience Section -->
-						<h2 id="experience">Experience</h2>
-						<hr>
-
-						<!-- Freelance work -->
-						<h3 style="display: inline;">Data Scientist/Statistician</h3>&nbsp;&nbsp; Freelance project &mdash; <em>July 2022-present</em>
-						<br>
-						<ul>
-							<li> Assisted medical team to examine skin cancer data from SEER registry </li>
-							<li> Collaborated with medical team in data collection and applying statistical techniques </li>
-							<li> Investigated skin cancer data with R to assist in research and understand available data </li>
-							<li> Created a regression model to determine significant variables in skin cancer incidence </li>
-							<li> Publication pending in 2023 </li>
-						</ul>
-
-						<!-- Mattress Firm-->
-						<h3 style="display: inline;">Data Scientist</h3>&nbsp;&nbsp; Mattress Firm &mdash; <em>November 2021-July 2022</em>
-						<br>
-						<ul>
-							<li> Built customer segments in <strong>python</strong> based on demographic data using <strong>unsupervised models</strong> to analyze 
-								customer habits and look for marketing opportunities </li>
-							<li> Examined customer demographic data for a variety of marketing teams, working with stakeholders to develop a 
-								more data-driven strategy  </li>
-							<li> Investigated customer survey data in python with <strong>NLP</strong> to analyze feedback from various customer 
-								groups and determine opportunities for improvement</li>
-							<li> Created an <strong>XGBoost</strong> model to classify customers based on previous transaction 
-								habits to aid in customer analysis with <strong>82% accuracy</strong> </li>
-							<li> Analyzed the impact of economic stimulus packages on sales, <strong>determining there was an increase</strong></li>
-							<li> Communicated results with stakeholders (managers to C-suite) to both technical and non-technical audiences</li>
-						</ul>
-
-						<!-- NC State Baseball-->
-						<h3 style="display: inline;"> Quantitative Analyst</h3>&nbsp;&nbsp; NC State Baseball &mdash; <em>March 2021-June 2022</em>
-						<br>
-						<ul>
-							<li> Formed a report in <strong>R</strong> to analyze NC State pitchers to help optimize their performance </li>
-							<li> Consulted the coaching staff based on findings from analysis and assist with game strategy </li>
-							<li> Advanced to the 2021 College World Series semifinal and 0.632-win percentage in 2022 </li>
-
-						</ul>
-
-						<!-- Ashley-->
-						<h3 style="display: inline;"> Data Analyst/BI Analyst</h3>&nbsp;&nbsp; Ashley Furniture &mdash; <em>November 2019-November 2021</em>
-						<br>
-						<ul>
-							<li> Automated manual processes writing <strong>SQL</strong> queries, <strong>saving 45 hours per week</strong></li>
-							<li> Optimized the process of diverting shipping containers in <strong>python</strong>, <strong>saving 8 hours per
-								week</strong> </li>
-							<li> Conducted a statistical analysis in <strong>R </strong> on new product sales and advertisement spending using 
-								a linear regression, determined ad spending had no impact on sales, <strong> saving $300,000 </strong> </li>
-							<li> Developed and maintained 17 Power BI Dashboards for Supply Chain, Manufacturing, and HR</li>
-						</ul>
-
-<!-- Keep this in case I want something similar for a different section
-						<div class="features">
-							<section>
-								<span class="icon solid major fa-code"></span>
-								<h3>Lorem ipsum amet</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-lock"></span>
-								<h3>Aliquam sed nullam</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-cog"></span>
-								<h3>Sed erat ullam corper</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-desktop"></span>
-								<h3>Veroeros quis lorem</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-link"></span>
-								<h3>Urna quis bibendum</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
-							<section>
-								<span class="icon major fa-gem"></span>
-								<h3>Aliquam urna dapibus</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
 						</div>
--->						
-						<!-- Education Section-->
-						<h2 id="education">Education</h2>
-						<hr>
-
-						<!-- NC State -->
-						<h3 style="display: inline;">North Carolina State University</h3>&nbsp;&nbsp; Masters of Science, Statistics &mdash; <em>May 2022</em>
-						<br>
-						<ul>
-							<li>Clubs: AI, Sports Analytics</li>
-							<li>Relevant courses: Deep Learning with Neural Networks, Statisical Learning, Fundamentals of Regression, Analysis of Big Data, 
-								Data Science for Statistics, Fundamentals of Statistical Inference (I and II), Applied Statistical Methods (I and II) </li>
-						</ul>
-						<!-- Xavier -->
-						<h3 style="display: inline;">Xavier University</h3>&nbsp;&nbsp;  Bachelors of Science, Mathematics, concentration in Economics &mdash; <em>May 2018</em>
-						<br>
-						<ul>
-							<li>Clubs: Math Club, Economics Association, Habitat for Humanity, Relay for Life</li>
-							<li>Relevant courses: Econometrics, Probability Theory, Public Economics, Discrete Mathematics, Differential Equations</li>
-						</ul>
-						
-						<!-- Skills -->
-						<h2 id="skills">Skills</h2>
-						<hr>
-
-						<!-- Programming -->
-						<h4><i class="fa fa-code" aria-hidden="true"></i>&nbsp;&nbsp;Programming</h4>
-						<div class="row">
-							<div class="display: inline-block">Python</div>
-							<div class="display: inline-block">R</div>
-							<div class="display: inline-block">PyTorch</div>
-							<div class="display: inline-block">pandas</div>
-							<div class="display: inline-block">NLTK</div>
-							<div class="display: inline-block">Tidyverse</div>
-							<div class="display: inline-block">numpy</div>
-							<div class="display: inline-block">sklearn</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Clients</span>
 						</div>
-						<br>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Partners</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+<!-- Skills
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Photoshop</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    <span>75%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>jQuery</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
+								    <span>60%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>HTML5</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								    <span>85%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>CSS3</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>WordPress</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    <span>70%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>SEO</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+-->
 
-						<!-- Machine Learning-->
-						<h4><i class="fa fa-brain" aria-hidden="true"></i>&nbsp;&nbsp;Machine Learning</h4>
-						<div class="row">
-							<div class="display: inline-block">Classification</div>
-							<div class="display: inline-block">Regression</div>
-							<div class="display: inline-block">Clustering</div>
-							<div class="display: inline-block">Deep Learning</div>
-							<div class="display: inline-block">Natural Language Processing</div>					
-						</div>
-						<br>
-
-						<!-- Data Engineering-->
-						<h4><i class="fa fa-database" aria-hidden="true"></i>&nbsp;&nbsp;Data Engineering</h4>
-						<div class="row">
-							<div class="display: inline-block">SQL</div>
-							<div class="display: inline-block">T-SQL</div>
-							<div class="display: inline-block">MySQL</div>
-							<div class="display: inline-block">BigQuery</div>					
-						</div>
-						<br>
-
-						<!-- Cloud Technologies -->
-						<h4><i class="fa fa-cloud" aria-hidden="true"></i>&nbsp;&nbsp;Cloud Technologies</h4>
-						<div class="row">
-							<div class="display: inline-block">GCP</div>
-							<div class="display: inline-block">Docker</div>					
-						</div>
-						<br>
-						
-						<!-- Tools -->
-						<h4><i class="material-icons">computer</i>&nbsp;&nbsp;Tools</h4>
-						<div class="row">
-							<div class="display: inline-block">Power BI</div>
-							<div class="display: inline-block">Tableau</div>
-							<div class="display: inline-block">R Shiny</div>
-							<div class="display: inline-block">GitHub</div>
-							<div class="display: inline-block">Jupyter Notebook</div>
-							<div class="display: inline-block">RStudio</div>
-							<div class="display: inline-block">Google Colab</div>
-						</div>
-						<br>
+			<!-- Education Original Version  -->
 <!--
-						Volunteer Work
-						<h2>Volunteering</h2>
-						<hr>
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Education</span>
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
 
-						 Football
-						<h3 style="display: inline">Football Coach</h3> &nbsp;&nbsp; Arcadia High School &mdash; <em>August 2019-present</em>
-						<ul>
-							<li> Develop skills and football knowledge of JV team, with a focus on defense and linemen</li>
-							<li> Assist varsity with in-game strategy and coaching</li>
-						</ul>
+					
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Master Degree Graphic Design
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-6">
+										      			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+										      		</div>
+										      	</div>
+									         </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of Computer Science
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+													<ul>
+														<li>Separated they live in Bookmarksgrove right</li>
+														<li>Separated they live in Bookmarksgrove right</li>
+													</ul>
+									        </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingThree">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Diploma in Information Technology
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
+									        </div>
+									    </div>
+									</div>
 
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFour">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Diploma in Information Technology
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
+									        </div>
+									    </div>
+									</div>
 
-						Showtime
-						<h3 style="display: inline">Basketball Coach</h3> &nbsp;&nbsp; Showtime AAU &mdash; <em>March 2018-present</em>
-						<ul>
-							<li> Devlop basketball skills with boys and girls teams </li>
-						</ul>
-						<br>
-					-->						
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFive">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
+									        </div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-						<!-- Downlaod Resume button-->
-						<ul class="actions">
-							<li><a href="resume/Xavier_Genelin_Resume.pdf" class="button" 
-								download="Xavier_Genelin_Resume" target="_blank">Download Resume</a></li>
-						</ul>
+		-->
+
+		<!-- Experience Section -->
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+							<!-- Skin Cancer Research-->
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2>Data Scientist <span>Freelance Research &mdash; July 2022-Present</span></h2>
+					                  <p>
+										<ul>
+											<li>Assisted medical team to examine skin cancer data from SEER registry</li>
+											<li>Collaborated with medical team in data collection and applying statistical and machine learning techniques</li>
+											<li>Investigated skin cancer data with <strong>R</strong> to assist in research and understand available data</li>
+											<li>Created a regression model to determine significant variables in skin cancer incidence</li>
+											<li>Publication pending in 2023</li>
+										</ul>
+									  </p>
+					               </div>
+					            </div>
+					         </article>
+
+							 <!-- Mattress Firm -->
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2>Data Scientist <span>Mattress Firm &mdash; November 2021-July 2022</span></h2>
+					                  <ul>
+										<li>Built customer segments in <strong>python</strong> based on demographic data using unsupervised machine learning models to 
+											analyze customer habits and look for marketing opportunities</li>
+										<li>Examined customer demographic data for a variety of marketing teams, working with stakeholders to develop a 
+											more data-driven strategy</li>  
+										<li>Investigated customer survey data in python with <strong>NLP</strong> to analyze feedback from various customer groups and 
+											determine opportunities for improvement</li>
+										<li>Created an <strong>XGBoost</strong> machine learning model to classify customers based on previous transaction habits to aid in 
+											customer analysis with <strong>82% accuracy</strong> </li>
+										<li>Analyzed the impact of economic stimulus packages on sales, <strong>determining there was an increase</strong> </li>
+										<li>Assisted the test and learn team in conducting A/B testing for different marketing strategies on mattresses </li>
+										<li>Communicated results with stakeholders (managers to C-suite) to both technical and non-technical audiences </li>
+										<li>Test</li>
+									  </ul>
+					               </div>
+					            </div>
+					         </article>
+
+							 <!-- NC State Baseball -->
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2>Quantitative Analyst <span>NC State Baseball &mdash; March 2021-June 2022</span></h2>
+					                  <ul>
+										<li>Formed a report using <strong>R</strong> and <strong>Tableau</strong> to analyze NC State pitchers to help optimize their performance</li>
+										<li>Consulted the coaching staff based on findings from analysis and assist with game strategy</li>
+										<li>Advanced to the 2021 College World Series semifinal and 0.632-win percentage in 2022</li>
+									  </ul>
+					               </div>
+					            </div>
+					         </article>
+
+							 <!-- Ashley Furniture-->
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-4">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2>Data Analyst/BI Analyst <span>November 2019-November 2021</span></h2>
+					                  <ul>
+										<li>Automated manual processes writing <strong>SQL</strong> queries for data extraction, <strong>saving 45 hours per week</strong></li>
+										<li>Designed an app in <strong>python</strong> to optimize the process of diverting shipping containers, 
+											<strong>saving 8 hours per week</strong></li>                
+										<li>Conducted a statistical analysis in <strong>R</strong> on new product sales and advertisement spending using a machine learning 
+											model, determined ad spending had no impact on sales, <strong>saving $300,000</strong></li>
+										<li>Developed and maintained 17 Power BI Dashboards for Supply Chain, Manufacturing, and HR to support 
+											business decisions</li>
+									  </ul>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div>
+					               </div>
+								   <div class="timeline-label2">
+									<p><a class="btn btn-primary btn-learn" href="resume/Xavier_Genelin_Resume.pdf" download>Download Resume <i class="icon-download4"></i></a></p>
+								   </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+
+			<!-- Education -->
+			<section class="colorlib-about" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">Education</span>
+										<h2 class="colorlib-heading">Education</h2>
+										<!-- NC State -->
+										<p><h3 style="display: inline;">Master of Science, Statistics</h3> North Carolina State University &mdash; May 2022
+											<ul>
+												<li>Clubs: AI, Sports Analytics</li>
+												<li>Relevant Courses: Deep Learning with Neural Networks, Statisical Learning, Fundamentals of Regression, Analysis of Big Data, 
+													Data Science for Statistics, Fundamentals of Statistical Inference (I and II), Applied Statistical Methods (I and II)</li>
+											</ul>
+											</p>
+										<!-- Xavier University -->
+										<p><h3 style="display: inline;">Bachelor of Science, Mathematics</h3> Xavier Univeristy &mdash; May 2018
+											<ul>
+												<li>Concentration in Economics</li>
+												<li>Clubs: Clubs: Math Club, Economics Association, Habitat for Humanity, Relay for Life</li>
+												<li>Relevant courses: Econometrics, Probability Theory, Public Economics, Discrete Mathematics, Differential Equations</li>
+											</ul>
+											</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Skills -->	
+			<section class="colorlib-services" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">What I do?</span>
+							<h2 class="colorlib-heading">Some areas of expertise</h2>
+						</div>
+					</div>
+					<div class="row row-pt-md">
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-6">
+								<span class="icon">
+									<i class="fa fa-brain"></i>
+								</span>
+								<div class="desc">
+									<h3>Machine Learning</h3>
+									<p>Classification, Regression, Clustering, Deep Learning, NLP</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-4">
+								<span class="icon">
+									<i class="fa fa-code"></i>
+								</span>
+								<div class="desc">
+									<h3>Programming</h3>
+									<p>Python, R, PyTorch, pandas, NLTK, Tidyverse, numpy, sklearn</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="fa fa-desktop"></i>
+								</span>
+								<div class="desc">
+									<h3>Tools</h3>
+									<p>Power BI, Tableau, R Shiny, GitHub, Jupyter Notebook, RStudio, Google Colab</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-1">
+								<span class="icon">
+									<i class="fa fa-database"></i>
+								</span>
+								<div class="desc">
+									<h3>Data Engineering</h3>
+									<p>SQL, T-SQL, MySQL, BigQuery</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-5">
+								<span class="icon">
+									<i class="fa fa-cloud"></i>
+								</span>
+								<div class="desc">
+									<h3>Cloud Technologies</h3>
+									<p>GCP, Docker</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-2">
+								<span class="icon">
+									<i class="fa fa-ellipsis"></i>
+								</span>
+								<div class="desc">
+									<h3>Other</h3>
+									<p>Research, Presentation, Communication, Critical Thinking, Problem Solving</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-work" data-section="projects">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Projects</span>
+							<h2 class="colorlib-heading animate-box">Recent Work</h2>
+						</div>
+					</div>
+					<!-- Filter if I can get it to work
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12">
+							<p class="work-menu">
+								<span><a href="filter-all" class="active">All Projects</a></span> 
+								<span><a href="filter-ml">Machine Learning</a></span> 
+								<span><a href="filter-nlp">NLP</a></span> 
+								<span><a href="filter-other">Other</a></span>
+							</p>
+						</div>
+					</div>
+				-->
+					
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/terrain.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Terrain Identification</a></h3>
+										<span>Use deep learning techniques to identify terrain types for a prosthetic limb based on accelerometer and gyroscope readings.</span>
+										<ul>
+											<li>PyTorch</li>
+											<li>Deep Learning</li>
+											<li>CNN</li>
+										</ul>
+										<p class="icon">
+											<span><a href="https://github.com/xaviergenelin/Terrain-Identification"><i class="fa fa-github"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/emotions.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Emotion Detection</a></h3>
+										<span>Use deep learning techniques to classifiy human emotion behind a conversation.</span>
+										<ul>
+											<li>PyTorch</li>
+											<li>Deep Learning</li>
+											<li>CNN</li>
+											<li>NLP</li>
+										</ul>
+										<p class="icon">
+											<span><a href="https://github.com/xaviergenelin/Emotion-Detection"><i class="fa fa-github"></i></a></span>
+											
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/nfl-league-logo.png);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">NFL Win Prediction</a></h3>
+										<span>An R shiny app that allows a user to explore NFL game data, and create models with selected parameters to predict 
+											winners for selected weeks.</span>
+										<ul>
+											<li>R</li>
+											<li>R Shiny</li>
+											<li>Classification</li>
+											</ul>
+										<p class="icon">
+											<span><a href="https://github.com/xaviergenelin/NFL-Win-Prediction"><i class="fa fa-github"></i></a></span>
+											<span><a href="https://xaviergenelin.shinyapps.io/NFL-Win-Prediction/">Shiny App</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/brain.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Alzheimers Risk Factors</a></h3>
+										<span>Explore MRI scan data of demented and non-demented individuals to identify risk factors associated with Alzheimer-onset dementia</span>
+										<ul>
+											<li>PySpark</li>
+											<li>Python</li>
+											<li>Classification</li>
+										</ul>
+										<p class="icon">
+											<span><a href="https://github.com/xaviergenelin/Alzheimers-Risk-Factors"><i class="fa fa-github"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/motorcycle.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Motorcycle Sales</a></h3>
+										<span>Explore motorcycle sale data to implement both the Grid Search Method and Gradient Descent Method to predict the selling price with 
+											the lowest variance.</span>
+											<ul>
+												<li>Python</li>
+												<li>pandas</li>
+												<li>matplotlib</li>
+											</ul>
+										<p class="icon">
+											<span><a href="https://github.com/xaviergenelin/Motorcycle-Sale-Analysis"><i class="fa fa-github"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/data.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Data Channel Prediction</a></h3>
+										<span>Analyze an online news popularity dataset to provide a report for 6 different data channels and predict the number of shares.</span>
+										<ul>
+											<li>R</li>
+											<li>Regression</li>
+										</ul>
+										<p class="icon">
+											<span><a href="https://github.com/xaviergenelin/Data-Channel-Prediction"><i class="fa fa-github"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/covid.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Covid API</a></h3>
+										<span>A vignette that shows how to retrieve data from the Covid API for exploratory analysis.</span>
+										<ul>
+											<li>R</li>
+											<li>Tidyverse</li>
+											<li>API</li>
+										</ul>
+										<p class="icon">
+											<span><a href="https://github.com/xaviergenelin/Covid-API"><i class="fa fa-github"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/wine.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Red Wine Quality</a></h3>
+										<span>Analyze the quality of red wine using various regression and classification models.</span>
+										<ul>
+											<li>R</li>
+											<li>Classification</li>
+											<li>Regression</li>
+										</ul>
+										<p class="icon">
+											<span><a href="https://github.com/xaviergenelin/Red-Wine-Quality-Analysis"><i class="fa fa-github"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/big_data.jpeg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Big Data Project</a></h3>
+										<span>This project provides a synopsis of Netflix's big data pipeline, investigates data in a sample database with SQL, 
+											and summarizes NFL data using the Pandas API on Spark.</span>
+											<ul>
+												<li>PySpark</li>
+												<li>SQL</li>
+												<li>pandas</li>
+											</ul>
+										<p class="icon">
+											<span><a href="https://github.com/xaviergenelin/Big-Data-Project"><i class="fa fa-github"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+					-->
+				</div>
+			</section>
+
+			<!-- Blog Section 
+			<section class="colorlib-blog" data-section="blog">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading">Recent Blog</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Renovating National Gallery</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Make website from scratch</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+-->
+
+<!-- Original Contact Section -->
+
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12">
+							<div class="about-desc">
+								<p> Interested in working together or have a role that I may be a fit for? Feel free to reach out!
+									</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>xgenelin@gmail.com</p>
+								</div>
+							</div>
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>(507) 459-0673</p>
+								</div>
+							</div>
+							
+						</div>
 						
 					</div>
-				</section>
-
-				<!-- Projects -->
-				
-					<section id="projects" class="wrapper style2 spotlights">
-						<h2>Projects</h2>
-						<!-- Possible Filters
-						<div id="myBtnContainer">
-							<button class="btn active" onclick="filterSelection('deep-learning')"> Deep Learning</button>
-							<button class="btn" onclick="filterSelection('classification')"> Classification</button>
-							<button class="btn" onclick="filterSelection('regression')"> Regression</button>
-						</div>
-						-->
-						<br>
-						<section id="terrain">
-							<a class="image"><img src="images/terrain.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Terrain Identification</h2>
-									<p>Use deep learning techniques to identify terrain types for a prosthetic limb based on accelerometer and gyroscope readings.
-									</p>
-									<div class="row">
-										<div class="display: inline-block">&bullet; PyTorch</div>
-										<div class="display: inline-block">&bullet; Deep Learning</div>
-										<div class="display: inline-block">&bullet; CNN</div>
-									</div>
-									<div>
-										<button onclick="window.open('https://github.com/xaviergenelin/Terrain-Identification')">GitHub Repo</button>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section id="emotion">
-							<a class="image"><img src="images/emotions.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Emotion Detection</h2>
-									<p>Use deep learning techniques to classifiy human emotion behind a conversation.
-									</p>
-									<div class="row">
-										<div class="display: inline-block">&bullet; PyTorch</div>
-										<div class="display: inline-block">&bullet; Deep Learning</div>
-										<div class="display: inline-block">&bullet; CNN</div>
-										<div class="display: inline-block">&bullet; NLP</div>
-									</div>
-									<div>
-										<button onclick="window.open('https://github.com/xaviergenelin/Emotion-Detection')">GitHub Repo</button>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section id="NFL-win">
-							<a class="image"><img src="images/nfl-league-logo.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>NFL Win Prediction</h2>
-									<p>A shiny app that allows a user to explore NFL game data, and create models with selected parameters to
-										predict winners for selected weeks.
-									</p>
-									<div class="row">
-										<div class="display: inline-block">&bullet; R</div>
-										<div class="display: inline-block">&bullet; R Shiny</div>
-										<div class="display: inline-block">&bullet; Classification</div>
-									</div>
-									<div class="btn-group">
-										<button onclick="window.open('https://github.com/xaviergenelin/NFL-Win-Prediction')">GitHub Repo</button>
-										<button onclick="window.open('https://xaviergenelin.shinyapps.io/NFL-Win-Prediction/')">Shiny App</button>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section id="alzheimers">
-							<a class="image"><img src="images/brain.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Alzheimers Risk Factors</h2>
-									<p>Explore MRI scan data of demented and non-demented individuals to identify risk factors associated with
-										Alzheimer-onset dementia
-									</p>
-									<div class="row">
-										<div class="display: inline-block">&bullet; PySpark</div>
-										<div class="display: inline-block">&bullet; python</div>
-										<div class="display: inline-block">&bullet; Classification</div>
-									</div>
-									<div>
-										<button onclick="window.open('https://github.com/xaviergenelin/Alzheimers-Risk-Factors')">GitHub Repo</button>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section id="motorcycle">
-							<a class="image"><img src="images/motorcycle.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Motorcycle Sales</h2>
-									<p>Explore motorcycle sale data to implement both the Grid Search Method and Gradient Descent Method to
-										predict the selling price with the lowest variance.
-									</p>
-									<div class="row">
-										<div class="display: inline-block">&bullet; Python</div>
-										<div class="display: inline-block">&bullet; pandas</div>
-										<div class="display: inline-block">&bullet; matplotlib</div>
-									</div>
-									<div>
-										<button onclick="window.open('https://github.com/xaviergenelin/Motorcycle-Sale-Analysis')">GitHub Repo</button>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section id="data-channel">
-							<a class="image"><img src="images/data.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Data Channel Prediction</h2>
-									<p> Analyze an online news popularity dataset to provide a report for 6 different data channels and predict
-										the number of shares.
-									</p>
-									<div class="row">
-										<div class="display: inline-block">&bullet; R</div>
-										<div class="display: inline-block">&bullet; Regression</div>
-									</div>
-									<div>
-										<button onclick="window.open('https://github.com/xaviergenelin/Data-Channel-Prediction')">GitHub Repo</button>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section id="covid-api">
-							<a class="image"><img src="images/covid.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Covid API</h2>
-									<p>A vignette that shows how to retrieve data from the Covid API for exploratory analysis.
-									</p>
-									<div class="row">
-										<div class="display: inline-block">&bullet; R</div>
-										<div class="display: inline-block">&bullet; Tidyverse</div>
-										<div class="display: inline-block">&bullet; API</div>
-									</div>
-									<div>
-										<button onclick="window.open('https://github.com/xaviergenelin/Covid-API')">GitHub Repo</button>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section id="red-wine">
-							<a class="image"><img src="images/wine.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Red Wine Quality</h2>
-									<p>Analyze the quality of red wine using various regression and classification models.
-									</p>
-									<div class="row">
-										<div class="display: inline-block">&bullet; R</div>
-										<div class="display: inline-block">&bullet; Classification</div>
-										<div class="display: inline-block">&bullet; Regression</div>
-									</div>
-									<div>
-										<button onclick="window.open('https://github.com/xaviergenelin/Red-Wine-Quality-Analysis')">GitHub Repo</button>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section id="big-data">
-							<a class="image"><img src="images/big_data.jpeg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Big Data Project</h2>
-									<p>This project provides a synopsis of Netflix&apos;s big data pipeline, investigates data in a sample 
-										database with SQL, and summarizes NFL data using the Pandas API on Spark.
-									</p>
-									<div class="row">
-										<div class="display: inline-block">&bullet; PySpark</div>
-										<div class="display: inline-block">&bullet; SQL</div>
-										<div class="display: inline-block">&bullet; pandas</div>
-									</div>
-									<div>
-										<button onclick="window.open('https://github.com/xaviergenelin/Big-Data-Project')">GitHub Repo</button>
-									</div>
-								</div>
-							</div>
-						</section>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contact</h2>
-							<p>Interested in working together or have a role that I may be a fit for? Feel free to reach out!</p>
-							<div class="split style1">
-								<!--
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								-->
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<span>xgenelin@gmail.com</span>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(507) 459-0673</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/xaviergenelin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/xavier-genelin/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-					</ul>
 				</div>
-			</footer>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
 
 	</body>
 </html>
+
